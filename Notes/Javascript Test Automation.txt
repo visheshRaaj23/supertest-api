@@ -1,0 +1,58 @@
+Building Fully functional automation test framework and also get yourself familiarize with syntax.
+API-Application Program Interface
+API enables communication and data exchange between 2 or more separate systems.
+It's like a messanger which takes a request and tells the system what to do and gives the response back.
+
+REST: Representational state Transfer
+It is the software architecture style that defines a way to create and build the API.
+
+--Client-Server seperation
+--Uniform Interface
+--Statelessness
+--Cacheability
+--layered system
+--Code on Demand
+
+
+HTTP Request:
+
+Base URI:
+HTTP Methods:What operation is being performed(GET/POST/PUT/DELETE)
+Headers:additional information passed to client and server
+Body:Optional Data
+
+REST API:Testing the business logic and the core functionality of the application.
+-Validating the responses, data,performance and security interfaces.
+
+-Validate whether the right property and value being returned in the response
+
+Functionality Testing:Testing the business logic of the applications.
+Load Testing:Determining systems performance under the expected load.
+Security Testing:We test whether API is secure from the external threats like cyber attack.
+Penetration testing:To find the security vulnerabilities that attacker could exploit.
+Negative testing: We test whether API can able to handle invalid inputs.
+
+Advantages of API Testing:
+--Early Application access : Application development starts firstly with API development.
+--Application can be accessed when core logic is built.
+So No need to wait/rely for UI development.
+--Test speed and coverage:
+Tests are competatively lot faster than browser tests and can have more test coverage.
+--Language Independent
+Data is exchanged via XML/JSON, you can write tests in any langauge that can communicate with this data.
+--Changes for API is made less frequently than for UI, Hence makes tests less flacky and more reliable
+
+Pretty straight forward
+Supertest, Mocha and Chai(Asseertion library), Mochaawesome, Jenkins
+By default It comes with Mocha-spec reporters
+Mochaawesome reporting tool.
+
+npm init -y(To initialize the project)
+npm i --save-dev supertest mocha chai @babel/cli @babel/core @babel/node @babel/register @babel/preset-env
+
+npm install faker
+npm install dotenv
+npm install --save-dev mochawesome
+npm test -- --reporter mochawesome
+
+npm run test-html
